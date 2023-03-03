@@ -1,7 +1,7 @@
 Find the output of the code snippets below:
 
 ```js
-console.log(numA + numB); //undefined
+console.log(numA + numB); //undefined + undefiend = NAN
 var numA = 21,
   numB = 30;
 ```
@@ -19,18 +19,18 @@ Find the output of the code snippets below:
 ```js
 let numA = 21,
   numB = 30;
-console.log(numA + numB); //numA has alreay been declared.
+console.log(numA + numB); //51
 ```
 
 Find the output of the code snippets below:
 
 ```js
-console.log(sayHello()); //hello
+console.log(sayHello()); //
 function sayHello() {
-  console.log("Hey");// undefiend
+  console.log("Hey");//
 }
 function sayHello() {
-  console.log("Hello");// undefiend
+  console.log("Hello");// hello
 }
 ```
 
@@ -38,16 +38,16 @@ Find the output of the code snippets below:
 
 ```js
 let username = "Tyrion";
-sayHello(); // TYrion
+sayHello();
 function sayHello() {
-  console.log(username);//undefiend
+  console.log(username);//Tyrion
 }
 ```
 
 Find the output of the code snippets below:
 
 ```js
-sayHello(); // tyrion
+sayHello(); // error
 let username = "Tyrion";
 function sayHello() {
   console.log(username);
@@ -88,9 +88,9 @@ Find the output of the code snippets below:
 
 ```js
 var username = "Tyrion";
-sayHello(); // sayhello is already declared.
+sayHello();
 let sayHello = () => {
-  console.log(username);
+  console.log(username);//undefiend
 };
 ```
 
@@ -104,7 +104,7 @@ let sayHello = () => {
   var username = "John";
   console.log(username);
 };
-sayHello(); // sayHello is already to declared
+sayHello(); //john
 ```
 
 Find the output of the code snippets below:
@@ -115,5 +115,5 @@ let sayHello = () => {
   console.log(username);
   let username = "John";
 };
-sayHello(); //sayHello is already to been declared.
+sayHello(); //error
 ```
