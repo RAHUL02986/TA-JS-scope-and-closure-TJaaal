@@ -54,7 +54,7 @@ reduce(nums, add, 0); //-> 8
 ```js
 function intersection(arrays) {
   let first = arrays[0];
-  for (let i = 0; i <arrays.length; i++) {
+  for (let i = 1; i <arrays.length; i++) {
     let second = arrays[i];
     first = first.filter(elm => second.includes(elm));
   }
@@ -76,7 +76,7 @@ console.log(
 ```js
 function union(...arrays) {
   let first = arrays[0];
-  for(let i = 0; i < arrays.length; i++) {
+  for(let i = 1; i < arrays.length; i++) {
     let second arrays[i];
     first = first.filter(elm => !second.includes(elm)).concat(second);
   }
