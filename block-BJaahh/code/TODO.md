@@ -90,7 +90,7 @@ function getCard(suit) {
       return Math.floor(Math.random() * card.length);
 
     }
-    return `card is : ${card[getRandomCard]} ${suit}`;
+    return `card is : ${card[getRandomCard()]} ${suit}`;
   }
 }
 
